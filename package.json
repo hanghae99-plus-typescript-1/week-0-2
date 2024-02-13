@@ -1,0 +1,12 @@
+{
+  "name": "week-0-2",
+  "version": "1.0.0",
+  "description": "기본적인 이론 내용은 스파르타 코딩 클럽 TypeScript 문법 종합반에 잘 나와있어서 <br> 해당 내용을 토대로, 학습한 내용을 시나리오 별로 간단하게 정리합니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
