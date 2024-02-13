@@ -1,11 +1,15 @@
 {
   "include": [
-    "src/**/*.ts"
+    "test.js"
   ],
   "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "allowJs": true,
+    "checkJs": true,
     "target": "es2016",
-    "rootDir": "./src",
-    "outDir": "./dist",
-    "noImplicitAny": true
+    "outDir": "./types",
+    "noImplicitAny": true,
+    "esModuleInterop": true
   }
 }

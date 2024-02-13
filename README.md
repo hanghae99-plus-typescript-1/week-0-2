@@ -60,3 +60,54 @@ tsc --build
 ```shell
 node ./dist/index.js
 ```
+
+<br>
+
+## 시나리오 2
+- 기존의 레거시 JavaScript 코드를 TypeScript 코드로 변환하고 싶은 경우
+- 시나리오 1의 설정을 토대로 진행하겠습니다.
+
+<br>
+
+루트 디렉터리에 test.js 파일을 생성합니다.
+
+```javascript
+/**
+ * @param {number} a
+ * @param {number} b
+ * @returns {number}
+ */
+export function add(a, b){
+  return a + b;
+}
+```
+
+<br>
+
+아래처럼 설정해 줍니다.
+
+```json
+{
+  "include": [
+    "test.js"
+  ],
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "allowJs": true,
+    "checkJs": true,
+    "target": "es2016",
+    "outDir": "./types",
+    "noImplicitAny": true,
+    "esModuleInterop": true
+  }
+}
+```
+
+<br>
+
+```shell
+tsc --build
+```
+
+.js 파일이 .d.ts 파일로 변환됩니다.
